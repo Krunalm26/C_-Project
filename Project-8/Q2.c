@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-// User Defined Function to calculate and print cubes
-void printCubes(int *arr, int rows, int cols) {
+
+void Cubes(int *arr, int rows, int cols) {
     printf("\nCubes of all elements:\n");
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
@@ -19,7 +19,7 @@ int main() {
 
     int a[size][size];
 
-    // Input
+    
     printf("Enter array elements:\n");
     for (int i = 0; i < size; i++) {
         for (int j = 0; j < size; j++) {
@@ -28,8 +28,8 @@ int main() {
         }
     }
 
-    // Function call with pointer
-    printCubes(&a[0][0], size, size);
+
+    Cubes(&a[0][0], size, size);
 
     return 0;
 }
